@@ -24,5 +24,8 @@ console.log(`${to_fahrenheit} degrees celsius is ${Math.round((to_fahrenheit*9/5
 let to_celsius = Number(prompt("Provide temperature in fahrenheit"))
 console.log(`${to_celsius} degrees fahrenheit is ${Math.round((to_celsius-32)*5/9)} degrees celsius`)
 function roll_d10() {
-    console.log(`${(Math.ceil(Math.random()*10))}`)
+    (`You rolled a(n):${(Math.ceil(Math.random()*10))}, neat!`)
+}
+function roll_d6() {
+    (`You rolled a(n): ${(Math.ceil(Math.random()*6))}, neat!`)
 }
