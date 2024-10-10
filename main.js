@@ -69,6 +69,7 @@ cha: ${cha} Mod: ${cha_mod}
 
 //Shutting down: Stat Wall
 //Booting up: Weapon Rolls
+//Subset: Melee Weapons
 function greatsword() {
     console.log(`You swung a greatsword!
         To hit: ${Math.ceil(Math.random()*20)+str_mod}
@@ -84,9 +85,8 @@ function longsword_twohand() {
 function rapier() {
     console.log(`You swung a rapier!
         To hit: ${Math.ceil(Math.random()*20)+dex_mod}
-        Damage: ${Math.ceil(Math.random()*8)+dex_mod}
-        `)
-}
+        Damage: ${Math.ceil(Math.random()*8)+dex_mod}`)}
+//Subset: Ranged Weapons
 function heavycrossbow() {
     console.log(`You shot a heavy crossbow!
         To hit: ${Math.ceil(Math.random()*20)+dex_mod}
@@ -97,5 +97,13 @@ function lightcrossbow() {
         Damage: ${Math.ceil(Math.random()*8)+dex_mod}`)}
 function handcrosbow() {
     console.log(`You shot a hand crossbow!
+        To hit: ${Math.ceil(Math.random()*20)+dex_mod}
+        Damage: ${Math.ceil(Math.random()*6)+dex_mod}`)}
+function longbow() {
+    console.log(`You shot a longbow!
+        To hit: ${Math.ceil(Math.random()*20)+dex_mod}
+        Damage: ${Math.ceil(Math.random()*8)+dex_mod}`)}
+function shortbow() {
+    console.log(`You shot a shortbow!
         To hit: ${Math.ceil(Math.random()*20)+dex_mod}
         Damage: ${Math.ceil(Math.random()*6)+dex_mod}`)}
