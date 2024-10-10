@@ -19,10 +19,10 @@ function circle_area() {
 
 /*****  Your code goes below  *****/
 
-let to_fahrenheit = Number(prompt("Provide temperature in celsius"))
-console.log(`${to_fahrenheit} degrees celsius is ${Math.round((to_fahrenheit*9/5)+32)} degrees fahrenheit.`)
-let to_celsius = Number(prompt("Provide temperature in fahrenheit"))
-console.log(`${to_celsius} degrees fahrenheit is ${Math.round((to_celsius-32)*5/9)} degrees celsius`)
+// let to_fahrenheit = Number(prompt("Provide temperature in celsius"))
+// console.log(`${to_fahrenheit} degrees celsius is ${Math.round((to_fahrenheit*9/5)+32)} degrees fahrenheit.`)
+// let to_celsius = Number(prompt("Provide temperature in fahrenheit"))
+// console.log(`${to_celsius} degrees fahrenheit is ${Math.round((to_celsius-32)*5/9)} degrees celsius`)
 
 //Initiating: Dnd Shenanagains
 //Booting Up: Dice Rolls
@@ -46,17 +46,17 @@ function roll_d4() {
 }
 
 //Booting Up: Stat Wall
-let str = (roll_d6+roll_d6+roll_d6)
+let str = Math.ceil(Math.random()*6)+Math.ceil(Math.random()*6)+Math.ceil(Math.random()*6)
 let str_mod = Math.floor((str-10)/2)
-let dex = (roll_d6+roll_d6+roll_d6)
+let dex = Math.ceil(Math.random()*6)+Math.ceil(Math.random()*6)+Math.ceil(Math.random()*6)
 let dex_mod = Math.floor((dex-10)/2)
-let con = (roll_d6+roll_d6+roll_d6)
+let con = Math.ceil(Math.random()*6)+Math.ceil(Math.random()*6)+Math.ceil(Math.random()*6)
 let con_mod = Math.floor((con-10)/2)
-let int = (roll_d6+roll_d6+roll_d6)
+let int = Math.ceil(Math.random()*6)+Math.ceil(Math.random()*6)+Math.ceil(Math.random()*6)
 let int_mod = Math.floor((int-10)/2)
-let wis = (roll_d6+roll_d6+roll_d6)
+let wis = Math.ceil(Math.random()*6)+Math.ceil(Math.random()*6)+Math.ceil(Math.random()*6)
 let wis_mod = Math.floor((wis-10)/2)
-let cha = (roll_d6+roll_d6+roll_d6)
+let cha = Math.ceil(Math.random()*6)+Math.ceil(Math.random()*6)+Math.ceil(Math.random()*6)
 let cha_mod = Math.floor((cha-10)/2)
 console.log(`By rolling 3d6 six times, these are your stats:
 str: ${str} Mod: ${str_mod}
@@ -70,23 +70,23 @@ cha: ${cha} Mod: ${cha_mod}
 //Booting up: Weapon Rolls
 function greatsword() {
     console.log(`You swung a greatsword!
-        To hit: ${roll_d20+str_mod}
-        Damage: ${roll_d6+roll_d6+str_mod}`)}
+        To hit: ${Math.ceil(Math.random()*20)+str_mod}
+        Damage: ${Math.ceil(Math.random()*6)+Math.ceil(Math.random()*6)+str_mod}`)}
 function longsword_onehand(){
     console.log(`You swung a longsword with one hand!
-        To hit: ${roll_d20+str_mod}
-        Damage: ${roll_d8+str_mod}`)}
+        To hit: ${Math.ceil(Math.random()*20)+str_mod}
+        Damage: ${Math.ceil(Math.random()*8)+str_mod}`)}
 function longsword_twohand() {
     console.log(`You swung a longsword with two hands!
-        To hit: ${roll_d20+str_mod}
-        Damage: ${roll_d10+str_mod}`)}
+        To hit: ${Math.ceil(Math.random()*20)+str_mod}
+        Damage: ${Math.ceil(Math.random()*8)+str_mod}`)}
 function rapier() {
     console.log(`You swung a rapier!
-        To hit: ${roll_d20+dex_mod}
-        Damage: ${roll_d8+dex_mod}
+        To hit: ${Math.ceil(Math.random()*20)+dex_mod}
+        Damage: ${Math.ceil(Math.random()*8)+dex_mod}
         `)
 }
 function heavycrossbow() {
     console.log(`You shot a heavy crossbow!
-        To hit: ${roll_d20+dex_mod}
-        Damage: ${roll_d8+dex_mod}`)}
+        To hit: ${Math.ceil(Math.random()*20)+dex_mod}
+        Damage: ${Math.ceil(Math.random()*8)+dex_mod}`)}
