@@ -66,6 +66,7 @@ int: ${int} Mod: ${int_mod}
 wis: ${wis} Mod: ${wis_mod}
 cha: ${cha} Mod: ${cha_mod}
 `)
+
 //Shutting down: Stat Wall
 //Booting up: Weapon Rolls
 function greatsword() {
@@ -89,4 +90,10 @@ function rapier() {
 function heavycrossbow() {
     console.log(`You shot a heavy crossbow!
         To hit: ${Math.ceil(Math.random()*20)+dex_mod}
+        Damage: ${Math.ceil(Math.random()*10)+dex_mod}`)}
+function lightcrossbow() {
+    console.log(`You shot a light crossbow!
+        To hit: ${Math.ceil(Math.random()*20)+dex_mod}
         Damage: ${Math.ceil(Math.random()*8)+dex_mod}`)}
+        `)
+}
