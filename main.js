@@ -95,5 +95,7 @@ function lightcrossbow() {
     console.log(`You shot a light crossbow!
         To hit: ${Math.ceil(Math.random()*20)+dex_mod}
         Damage: ${Math.ceil(Math.random()*8)+dex_mod}`)}
-        `)
-}
+function handcrosbow() {
+    console.log(`You shot a hand crossbow!
+        To hit: ${Math.ceil(Math.random()*20)+dex_mod}
+        Damage: ${Math.ceil(Math.random()*6)+dex_mod}`)}
