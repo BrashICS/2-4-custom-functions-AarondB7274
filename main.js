@@ -44,18 +44,19 @@ function roll_d6() {
 function roll_d4() {
     Math.ceil(Math.random()*4)
 }
+
 //Booting Up: Stat Wall
-let str = roll_d6+roll_d6+roll_d6
+let str = (roll_d6+roll_d6+roll_d6)
 let str_mod = Math.floor((str-10)/2)
-let dex = roll_d6+roll_d6+roll_d6
+let dex = (roll_d6+roll_d6+roll_d6)
 let dex_mod = Math.floor((dex-10)/2)
-let con = roll_d6+roll_d6+roll_d6
+let con = (roll_d6+roll_d6+roll_d6)
 let con_mod = Math.floor((con-10)/2)
-let int = roll_d6+roll_d6+roll_d6
+let int = (roll_d6+roll_d6+roll_d6)
 let int_mod = Math.floor((int-10)/2)
-let wis = roll_d6+roll_d6+roll_d6
+let wis = (roll_d6+roll_d6+roll_d6)
 let wis_mod = Math.floor((wis-10)/2)
-let cha = roll_d6+roll_d6+roll_d6
+let cha = (roll_d6+roll_d6+roll_d6)
 let cha_mod = Math.floor((cha-10)/2)
 console.log(`By rolling 3d6 six times, these are your stats:
 str: ${str} Mod: ${str_mod}
@@ -67,14 +68,25 @@ cha: ${cha} Mod: ${cha_mod}
 `)
 //Shutting down: Stat Wall
 //Booting up: Weapon Rolls
-function greatsword_swing() {
+function greatsword() {
     console.log(`You swung a greatsword!
         To hit: ${roll_d20+str_mod}
-        Damage: ${Math.ceil((Math.random()*6)+(Math.random()*6))+str_mod}
+        Damage: ${roll_d6+roll_d6+str_mod}`)}
+function longsword_onehand(){
+    console.log(`You swung a longsword with one hand!
+        To hit: ${roll_d20+str_mod}
+        Damage: ${roll_d8+str_mod}`)}
+function longsword_twohand() {
+    console.log(`You swung a longsword with two hands!
+        To hit: ${roll_d20+str_mod}
+        Damage: ${roll_d10+str_mod}`)}
+function rapier() {
+    console.log(`You swung a rapier!
+        To hit: ${roll_d20+dex_mod}
+        Damage: ${roll_d8+dex_mod}
         `)
 }
-function heavycrossbow_shot() {
+function heavycrossbow() {
     console.log(`You shot a heavy crossbow!
         To hit: ${roll_d20+dex_mod}
-        Damage: ${
-}
+        Damage: ${roll_d8+dex_mod}`)}
